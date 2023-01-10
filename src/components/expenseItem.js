@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './cssFiles/style.css';
 import ExpenseDate from './expenseDate';
 
 function ExpenseItem(props) {

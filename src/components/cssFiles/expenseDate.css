@@ -1,0 +1,13 @@
+.dateItems {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: aliceblue;
+  color: black;
+}
+.dateItems * {
+  margin: 4px;
+}
