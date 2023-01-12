@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './cssFiles/style.css';
 import ExpenseDate from './expenseDate';
+import NewExpense from './form/NewExpense';
 
 function ExpenseItem(props) {
+  const [amount, setAmount] = useState(props.amount);
+
+  const ClickHandler = () => {
+    setAmount('$500');
+  };
+
   return (
     <>
-      <h1>Lets get started</h1>
       <div className="items">
         <div className="sub-items">
           <ExpenseDate date={props.date} />
           <div className="carInsurance">{props.title}</div>
         </div>
-        <button className="btn"> {props.amount}</button>
+        <div className="btn"> {amount}</div>
+        <button className="btn" onClick={ClickHandler}>
+          {' '}
+          Change amount
+        </button>
       </div>
     </>
   );

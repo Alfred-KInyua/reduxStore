@@ -1,5 +1,6 @@
 import Counter from './feature/counter/Counter';
 import MainDataItems from './components/mainDataItems';
+import NewExpense from './components/form/NewExpense';
 function App() {
   const expenses = [
     {
@@ -29,6 +30,8 @@ function App() {
   ];
   return (
     <>
+      <NewExpense />
+
       <MainDataItems items={expenses} />
     </>
   );
