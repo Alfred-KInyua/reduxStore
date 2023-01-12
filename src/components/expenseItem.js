@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './cssFiles/style.css';
 import ExpenseDate from './expenseDate';
-import NewExpense from './form/NewExpense';
 
 function ExpenseItem(props) {
   const [amount, setAmount] = useState(props.amount);

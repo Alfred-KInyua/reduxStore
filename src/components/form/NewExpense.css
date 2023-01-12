@@ -11,8 +11,8 @@ input[type] {
   border-radius: 1em;
 }
 input[type='submit'] {
-  width: 400%;
+  width: 40%;
   margin: 10px;
-  transform: translate(-40%, 10%);
+  transform: translate(65%, 10%);
   background-color: skyblue;
 }
