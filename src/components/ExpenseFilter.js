@@ -8,7 +8,7 @@ function ExpenseFilter(props) {
   return (
     <>
       <label>Choose a year:</label>
-      <select selected={props.selected} onChange={DropdownHandler}>
+      <select value={props.selected} onChange={DropdownHandler}>
         <option value="2021">2021</option>
         <option value="2022">2022</option>
         <option value="2023">2023</option>

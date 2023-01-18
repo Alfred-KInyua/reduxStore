@@ -27,11 +27,8 @@ function App() {
       date: new Date(10 / 12 / 2022),
     },
   ];
-  const AddExpenseHandler = (receivedData) => {
-    const display = {
-      ...receivedData,
-    };
-    console.log(display);
+  const AddExpenseHandler = (expense) => {
+    console.log(expense);
   };
   return (
     <>

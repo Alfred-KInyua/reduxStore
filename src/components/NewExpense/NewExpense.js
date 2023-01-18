@@ -1,6 +1,6 @@
 import React from 'react';
 import '../cssFiles/NewExpense.css';
-import DropDown from '../ExpenseFilter';
+
 import ExpenseForm from './ExpenseForm';
 function NewExpense(props) {
   const SaveFormData = (entredFormData) => {
@@ -16,7 +16,6 @@ function NewExpense(props) {
   return (
     <>
       <ExpenseForm onSaveFormData={SaveFormData} />
-      <DropDown onSaveOptions={SaveOptions} />
     </>
   );
 }
