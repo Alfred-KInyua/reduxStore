@@ -1,6 +1,5 @@
-import Counter from './feature/counter/Counter';
-import MainDataItems from './components/mainDataItems';
-import NewExpense from './components/form/NewExpense';
+import MainExpenseItems from './components/MainExpenseItems';
+import NewExpense from './components/NewExpense/NewExpense';
 function App() {
   const expenses = [
     {
@@ -28,11 +27,16 @@ function App() {
       date: new Date(10 / 12 / 2022),
     },
   ];
+  const AddExpenseHandler = (receivedData) => {
+    const display = {
+      ...receivedData,
+    };
+    console.log(display);
+  };
   return (
     <>
-      <NewExpense />
-
-      <MainDataItems items={expenses} />
+      <NewExpense onNewExpense={AddExpenseHandler} />
+      <MainExpenseItems items={expenses} />
     </>
   );
 }
